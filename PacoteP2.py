@@ -16,7 +16,7 @@ def Passeio():
     aaa = 1
     bbb = 2
     while aaa < bbb:
-        pgt1 = input('Ok, você vai passear em algum lugar?\n')
+        pgt1 = input('Ok, você vai passear em algum lugar?\n') #pgt1 (pergunta 1)
 
         if re.search('\\bsim\\b', pgt1, re.IGNORECASE):
             bbb -= 1
