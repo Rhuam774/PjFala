@@ -2,7 +2,7 @@
 from time import sleep
 from os import system
 import sys
-from PacoteP2 import Passeio
+from PacoteP2 import Passeio, Noticias
 import re
 ######################
 def T ():
@@ -37,11 +37,12 @@ T()
 nn()
 pgt1 = input('diz ai: ')
 
-if re.search('\\bpasseio\\b', pgt1, re.IGNORECASE):
+if re.search('passeio', pgt1, re.IGNORECASE):
     Passeio()
 
-elif pgt1 == 'noticias':
-    print('Não quero falar sobre isso! \nTchau!')
+elif re.search('noticias', pgt1, re.IGNORECASE):
+    Noticias()
+
 
 else:
     print('Infelismente eu não quero conversar, Tchau!')
