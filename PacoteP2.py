@@ -29,7 +29,7 @@ def Função1(pergunta, decisão, pergunta2, opinião, opinião2):
             esc1 = random.choice([opinião, opinião2])
             sleep(1)
             print(esc1)
-            sleep(1)
+            sleep(4)
             system('cls')
 
         else:

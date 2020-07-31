@@ -43,7 +43,9 @@ if re.search('passeio', pgt1, re.IGNORECASE):
 elif re.search('noticias', pgt1, re.IGNORECASE):
     Noticias()
 
-
+elif re.search('papo', pgt1, re.IGNORECASE):
+    print('Não quero falar sobre isso')
+    sleep(3)
 else:
     print('Infelismente eu não quero conversar, Tchau!')
 
